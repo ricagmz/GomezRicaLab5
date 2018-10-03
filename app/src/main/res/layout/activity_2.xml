@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:background="#cfd8dc"
+tools:context=".Activity2">
+
+<LinearLayout
+    android:id="@+id/linearLayout"
+    android:layout_width="369dp"
+    android:layout_height="261dp"
+    android:layout_marginEnd="7dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:orientation="vertical"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/ayala" />
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="370dp"
+        android:layout_height="146dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="6dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="156dp">
+
+            <TextView
+                android:id="@+id/textView"
+                style="@style/title"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:text="AYALA CENTER" />
+
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/subtitle"
+                android:layout_width="167dp"
+                android:layout_height="32dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="50dp"
+                android:layout_marginStart="23dp"
+                android:text="Location: Makati City" />
+
+            <TextView
+                android:id="@+id/textView3"
+                style="@style/subtitle"
+                android:layout_width="206dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/textView2"
+                android:layout_marginBottom="31dp"
+                android:text="DIstance from  UST: 9.0 km" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        style="@style/button"
+        android:id="@+id/btnmap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:layout_marginEnd="34dp"
+        android:onClick="process"
+        android:text="Map"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        style="@style/button"
+        android:id="@+id/btnact1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginStart="46dp"
+        android:onClick="process"
+        android:text="Activity1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnmap"
+        app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>
